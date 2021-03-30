@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     Button btnlogin;
+<<<<<<< HEAD
+=======
+    Button btnSignUp;
+>>>>>>> parent of 10f336a (ejemplo de listado de usuarios)
     DBTheLabIT DB;
 
     @Override
@@ -29,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         username    = (EditText) findViewById(R.id.username);
         password    = (EditText) findViewById(R.id.password);
         btnlogin    = (Button) findViewById(R.id.btnLogin);
+<<<<<<< HEAD
+=======
+        btnSignUp   = (Button) findViewById(R.id.btnSignUp);
+
+>>>>>>> parent of 10f336a (ejemplo de listado de usuarios)
         DB = new DBTheLabIT(this);
 
 

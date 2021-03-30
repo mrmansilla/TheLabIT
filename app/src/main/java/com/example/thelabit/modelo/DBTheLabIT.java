@@ -57,7 +57,11 @@ public class DBTheLabIT extends SQLiteOpenHelper {
         queryTablaLogin = "INSERT INTO ENTRENADORES(USERNAME, FORMACION) VALUES ('1', 'ED FISICA')";
         db.execSQL(queryTablaLogin);
 
+<<<<<<< HEAD
         queryTablaLogin = "INSERT INTO CORREDORES(USERNAME, EDAD) VALUES ('2', 35)";
+=======
+        queryTablaLogin = "INSERT INTO CORREDORES(USERNAME, EDAD ) VALUES ('2', '70', 'MASCULINO', '170', '60', '180', '10', '50')";
+>>>>>>> parent of 10f336a (ejemplo de listado de usuarios)
         db.execSQL(queryTablaLogin);
 
     }
