@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">TheLabIT</string>
+    <string name="app_name">RunUp</string>
     <string name="usuario">usuario</string>
     <string name="password">password</string>
-    <string name="recupero_password">por aca paso Adro</string>
+    <string name="recupero_password">recuperar password</string>
 </resources>
