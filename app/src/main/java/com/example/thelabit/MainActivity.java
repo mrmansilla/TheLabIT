@@ -9,20 +9,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.thelabit.modelo.DBTheLabIT;
+import com.example.thelabit.modelo.Corredor;
 import com.example.thelabit.modelo.Login;
 import com.example.thelabit.vista.HomeCorredor;
 import com.example.thelabit.vista.HomeEntrenador;
+import com.example.thelabit.vista.RegistrarEntrenador;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText username;
     EditText password;
     Button btnlogin;
-<<<<<<< HEAD
-=======
-    Button btnSignUp;
->>>>>>> parent of 10f336a (ejemplo de listado de usuarios)
+    Button btnSignUp, btnLista;
     DBTheLabIT DB;
 
     @Override
@@ -33,11 +31,9 @@ public class MainActivity extends AppCompatActivity {
         username    = (EditText) findViewById(R.id.username);
         password    = (EditText) findViewById(R.id.password);
         btnlogin    = (Button) findViewById(R.id.btnLogin);
-<<<<<<< HEAD
-=======
         btnSignUp   = (Button) findViewById(R.id.btnSignUp);
+        btnLista   = (Button) findViewById(R.id.btnLista);
 
->>>>>>> parent of 10f336a (ejemplo de listado de usuarios)
         DB = new DBTheLabIT(this);
 
 
@@ -53,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //creo un objeto Login para hacer el chequeo
                 Login login = new Login(user, pass);
+                //Corredor corredor = new Corredor();
 
                 String tipo = DB.chequearUsuarioPassword(login);
 
@@ -67,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "nooo", Toast.LENGTH_SHORT).show();
                 }
 
+            }
+        });
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), RegistrarEntrenador.class);
+                startActivity(intent);
             }
         });
     }

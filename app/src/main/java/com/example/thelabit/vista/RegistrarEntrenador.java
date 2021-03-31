@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.thelabit.R;
-import com.example.thelabit.modelo.DBTheLabIT;
 import com.example.thelabit.modelo.Entrenador;
 
 public class RegistrarEntrenador extends AppCompatActivity {

@@ -1,5 +1,6 @@
 package com.example.thelabit.modelo.daos;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -14,7 +15,7 @@ import java.util.List;
 public interface UsuarioDao {
 
     @Query('SELECT * FROM usuario')
-    List<Usuario> getAll();
+    LiveData<List<Usuario>> getAll();
 
     @Insert
     void insert(Usuario usuario);
